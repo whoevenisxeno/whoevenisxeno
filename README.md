@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=110&section=header&text=xeno&fontSize=44&fontColor=e6edf3&fontAlign=50&fontAlignY=50" alt="xeno" />
 
-<sub>new dev from rome, italy. mostly rust. part of 98k team.</sub>
+<sub>new dev from italy. mostly rust and python. part of 98k team.</sub>
 
 <br/><br/>
 
