@@ -19,7 +19,7 @@
 ## about
 
 hi, im xeno. my main language is python, followed by rust. i like small tools that do one thing and dont ask for an account.
-part of the 98k team ([@98kore](https://github.com/98kore)).
+part of the 98k Team ([@98k-team](https://github.com/98k-team)).
 
 ---
 
