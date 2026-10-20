@@ -2,13 +2,14 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=110&section=header&text=xeno&fontSize=44&fontColor=e6edf3&fontAlign=50&fontAlignY=50" alt="xeno" />
 
-<sub>new dev from italy. mostly rust and python. part of 98k team.</sub>
+<sub>new dev from rome, italy. python first, then rust. part of 98k team.</sub>
 
 <br/><br/>
 
 ![followers](https://img.shields.io/github/followers/whoevenisxeno?style=flat-square&color=30363d&labelColor=161b22)
 ![repos](https://img.shields.io/badge/repos-5-30363d?style=flat-square&labelColor=161b22)
-![rust](https://img.shields.io/badge/rust-main-30363d?style=flat-square&labelColor=161b22&logo=rust&logoColor=white)
+![python](https://img.shields.io/badge/main-python-30363d?style=flat-square&labelColor=161b22&logo=python&logoColor=white)
+![rust](https://img.shields.io/badge/then-rust-30363d?style=flat-square&labelColor=161b22&logo=rust&logoColor=white)
 ![team](https://img.shields.io/badge/team-98k-30363d?style=flat-square&labelColor=161b22)
 
 </div>
@@ -17,12 +18,31 @@
 
 ## about
 
-hi, im xeno. i write small rust tools that do one thing and dont ask for an account.
+hi, im xeno. my main language is python, followed by rust. i like small tools that do one thing and dont ask for an account.
 part of the 98k team ([@98kore](https://github.com/98kore)).
 
 ---
 
 ## main projects
+
+### [simpleclip](https://github.com/whoevenisxeno/simpleclip-windows)
+
+<img src="https://raw.githubusercontent.com/whoevenisxeno/simpleclip-windows/main/assets/icon-256.png" width="96" alt="simpleclip logo" align="right" />
+
+instant replay for windows. a rolling screen buffer you save with a hotkey.
+
+- keeps the last 15s to 5min in ram, `alt+f10` saves it, no record button
+- hardware encoding: nvenc, amf, quicksync, x264 or media foundation, first one that works
+- clip gallery with bookmarks, notes and search
+- lossless trim (no re-encode) and compress for discord
+- no account needed
+
+![rust](https://img.shields.io/badge/rust-30363d?style=flat-square&labelColor=161b22&logo=rust&logoColor=white)
+![windows](https://img.shields.io/badge/windows-30363d?style=flat-square&labelColor=161b22&logo=windows&logoColor=white)
+![license](https://img.shields.io/github/license/whoevenisxeno/simpleclip-windows?style=flat-square&color=30363d&labelColor=161b22)
+![stars](https://img.shields.io/github/stars/whoevenisxeno/simpleclip-windows?style=flat-square&color=30363d&labelColor=161b22)
+
+<br/>
 
 ### [hyphen](https://github.com/whoevenisxeno/hyphen)
 
@@ -40,49 +60,20 @@ hyphen bonsai             # one effect
 hyphen cycle -e 20        # rotate every 20s
 ```
 
+<table>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/whoevenisxeno/hyphen/main/docs/img/terrain.png" alt="terrain" /></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/whoevenisxeno/hyphen/main/docs/img/aurora.png" alt="aurora" /></td>
+</tr>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/whoevenisxeno/hyphen/main/docs/img/fire.png" alt="fire" /></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/whoevenisxeno/hyphen/main/docs/img/bonsai.png" alt="bonsai" /></td>
+</tr>
+</table>
+
 ![rust](https://img.shields.io/badge/rust-30363d?style=flat-square&labelColor=161b22&logo=rust&logoColor=white)
 ![license](https://img.shields.io/github/license/whoevenisxeno/hyphen?style=flat-square&color=30363d&labelColor=161b22)
 ![stars](https://img.shields.io/github/stars/whoevenisxeno/hyphen?style=flat-square&color=30363d&labelColor=161b22)
-
-```mermaid
-flowchart LR
-    A[hyphen] --> B{effect}
-    B --> C[matrix]
-    B --> D[bonsai]
-    B --> E[pipes]
-    B --> F[fire]
-    B --> G[+ 29 more]
-    C & D & E & F & G --> H[theme<br/>21 built in]
-    H --> I[crossterm output<br/>truecolor, 256 fallback]
-```
-
-### [simpleclip](https://github.com/whoevenisxeno/simpleclip-windows)
-
-instant replay for windows. a rolling screen buffer you save with a hotkey.
-
-- keeps the last 15s to 5min in ram, `alt+f10` saves it, no record button
-- hardware encoding: nvenc, amf, quicksync, x264 or media foundation, first one that works
-- clip gallery with bookmarks, notes and search
-- lossless trim (no re-encode) and compress for discord
-- no account needed
-
-![rust](https://img.shields.io/badge/rust-30363d?style=flat-square&labelColor=161b22&logo=rust&logoColor=white)
-![windows](https://img.shields.io/badge/windows-30363d?style=flat-square&labelColor=161b22&logo=windows&logoColor=white)
-![license](https://img.shields.io/github/license/whoevenisxeno/simpleclip-windows?style=flat-square&color=30363d&labelColor=161b22)
-![stars](https://img.shields.io/github/stars/whoevenisxeno/simpleclip-windows?style=flat-square&color=30363d&labelColor=161b22)
-
-```mermaid
-flowchart LR
-    A[windows graphics capture<br/>video] --> C
-    B[wasapi<br/>desktop + mic] --> C
-    C[gpu encode<br/>nvenc / amf / qsv / x264 / mf] --> D[(rolling buffer<br/>in ram)]
-    E{{hotkey}} --> F[scd<br/>background service]
-    F -->|flush| D
-    D --> G[mp4]
-    G --> H[sc-gui<br/>gallery, trim, share]
-    I[sc cli] -->|named pipe| F
-    H -->|named pipe| F
-```
 
 ---
 
@@ -90,7 +81,8 @@ flowchart LR
 
 | | |
 | :-- | :-- |
-| systems | rust, crossterm, egui, ffmpeg-next, windows graphics capture, wasapi |
+| languages | python, rust, java |
+| rust | crossterm, egui, ffmpeg-next, windows graphics capture, wasapi |
 | mods | java, fabric ([lazyswitcher](https://github.com/whoevenisxeno/lazyswitcher)) |
 | packaging | inno setup, aur, powershell build scripts |
 
