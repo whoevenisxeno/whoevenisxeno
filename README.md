@@ -81,8 +81,7 @@ hyphen cycle -e 20        # rotate every 20s
 
 | | |
 | :-- | :-- |
-| languages | python, rust, java |
-| rust | crossterm, egui, ffmpeg-next, windows graphics capture, wasapi |
+| languages | python, rust, java, js <sub>(claude's help)</sub> |
 | mods | java, fabric ([lazyswitcher](https://github.com/whoevenisxeno/lazyswitcher)) |
 | packaging | inno setup, aur, powershell build scripts |
 
